@@ -18,7 +18,8 @@ namespace UnitTestSubstring
         {
             var algms = new List<ISubstringSearch>()
             {
-                new Boyer_Moore(),
+                //new Boyer_Moore(),
+                new B_M(),
                 new Brute_force(),
                 new Rabin_Karp(),
                 new Knuth_Morris_Pratt()

@@ -18,12 +18,20 @@ namespace Lab6
                 bool OK = true;
                 for (int j = 0; j < match.Length; j++)
                 {
-                    if (text[i + j] != match[j])
+                    string textChar = text.Substring(i + j, 1);
+                    string matchChar = match.Substring(j, 1);
+                    if (matchChar != textChar)
                     {
                         OK = false;
-                        
+                        break;
+
                     }
                 }
+                //string textChar = text.Substring(i , match.Length);
+                //if (textChar!=match)
+                //{
+                //    OK = false;
+                //}
                 if (OK != false)
                 {
                     answer.Add(i);

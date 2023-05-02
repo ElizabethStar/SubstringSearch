@@ -18,10 +18,13 @@ namespace Lab6
                 {
                     new Brute_force(),
                     new Rabin_Karp(),
-                    new Boyer_Moore(),
-                    new Knuth_Morris_Pratt()
+                    new B_M(),
+                   //new Boyer_Moore(),
+                    new Knuth_Morris_Pratt(),
+                   
                 };
             string text;
+            
             using (var sr = new StreamReader("anna.txt", Encoding.UTF8))
             {
                 text = sr.ReadToEnd().ToLower();

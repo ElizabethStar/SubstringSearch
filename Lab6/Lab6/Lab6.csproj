@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Boyer_Moore.cs" />
     <Compile Include="Brute_force.cs" />
+    <Compile Include="B_M.cs" />
     <Compile Include="ISubstringSearch.cs" />
     <Compile Include="Knuth_Morris_Pratt.cs" />
     <Compile Include="Program.cs" />

@@ -11,23 +11,23 @@ namespace Lab6
         public List<int> SubstringSearch(string pat, string txt)
         {
             List<int> answer = new List<int>();
-            ulong q = 2147483647;
-            ulong d = 256;
+            int q = 14969;
+            int d = 256;
             int M = pat.Length;
             int N = txt.Length;
 
-            ulong patHash;
+            int patHash;
 
-            ulong txtHash;
-            ulong firstIndexHash = 1;
+            int txtHash;
+            int firstIndexHash = 1;
 
-            patHash = (ulong)pat[0] % q;
-            txtHash = (ulong)txt[0] % q;
+            patHash = (int)pat[0] % q;
+            txtHash = (int)txt[0] % q;
             for (int i = 1; i < M; i++)
             {
-                patHash = (patHash*d+ (ulong)pat[i])%q;
-                txtHash = (txtHash*d+ (ulong)txt[i])%q;
-                firstIndexHash = firstIndexHash*d%q;
+                patHash = ((patHash<<8)+ (int)pat[i])%q;
+                txtHash = ((txtHash<<8)+ (int)txt[i])%q;
+                firstIndexHash = (firstIndexHash<<8)%q;
             }
 
             for (int i = 0; i <= N - M; i++)
@@ -49,8 +49,8 @@ namespace Lab6
 
                 if (i < N - M)
                 {
-                    txtHash -= ((ulong)(txt[i]) * firstIndexHash) % q;
-                    txtHash =((txtHash+ q)*d+ (ulong)(txt[i + M]))%q;
+                    txtHash -= ((int)(txt[i]) * firstIndexHash) % q;
+                    txtHash =(((txtHash+ q)<<8)+ (int)(txt[i + M]))%q;
                 }
             }
             return answer;
