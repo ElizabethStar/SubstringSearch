@@ -8,7 +8,6 @@ C:\Users\user\source\repos\Lab6\Lab6\obj\Release\Lab6.pdb
 Z:\Документы\Desktop\алгоритмы\Lab6\Lab6\bin\Release\Lab6.exe.config
 Z:\Документы\Desktop\алгоритмы\Lab6\Lab6\bin\Release\Lab6.exe
 Z:\Документы\Desktop\алгоритмы\Lab6\Lab6\bin\Release\Lab6.pdb
-Z:\Документы\Desktop\алгоритмы\Lab6\Lab6\obj\Release\Lab6.csprojAssemblyReference.cache
 Z:\Документы\Desktop\алгоритмы\Lab6\Lab6\obj\Release\Lab6.csproj.CoreCompileInputs.cache
 Z:\Документы\Desktop\алгоритмы\Lab6\Lab6\obj\Release\Lab6.exe
 Z:\Документы\Desktop\алгоритмы\Lab6\Lab6\obj\Release\Lab6.pdb
